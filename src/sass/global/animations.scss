@@ -1,0 +1,110 @@
+@keyframes error {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  5% {
+    transform: translate(5px, 3px);
+  }
+
+  10% {
+    transform: translate(1px, 6px);
+  }
+
+  15% {
+    transform: translate(7px, -1px);
+  }
+
+  20% {
+    transform: translate(5px, 3px);
+  }
+
+  25% {
+    transform: translate(1px, 2px);
+  }
+
+  30% {
+    transform: translate(-4px, -4px);
+  }
+
+  35% {
+    transform: translate(-8px, 2px);
+  }
+
+  40% {
+    transform: translate(-3px, -3px);
+  }
+
+  45% {
+    transform: translate(3px, -7px);
+  }
+
+  50% {
+    transform: translate(-2px, -3px);
+  }
+
+  55% {
+    transform: translate(0, 2px);
+  }
+
+  60% {
+    transform: translate(3px, 5px);
+  }
+
+  65% {
+    transform: translate(6px, 3px);
+  }
+
+  70% {
+    transform: translate(1px, -5px);
+  }
+
+  75% {
+    transform: translate(-6px, -8px);
+  }
+
+  80% {
+    transform: translate(-1px, -2px);
+  }
+
+  85% {
+    transform: translate(5px, 2px);
+  }
+
+  90% {
+    transform: translate(8px, 6px);
+  }
+
+  95% {
+    transform: translate(3px, -1px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes rotate-loader {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes offset-loader {
+  0%,
+  100% {
+    stroke-dashoffset: 190;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+
+  50.1% {
+    stroke-dashoffset: 400;
+  }
+}

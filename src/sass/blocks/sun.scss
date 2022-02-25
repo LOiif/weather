@@ -1,0 +1,20 @@
+.sun {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(ellipse at center, white 0%, rgb(255 255 255 / 57%) 100%);
+  border: 3px solid rgb(255 255 255 / 1.7%);
+  border-radius: 50%;
+  box-shadow: 0 0 15px 1px rgb(244 243 173 / 77%), 0 0 40px 3px rgb(255 255 255 / 100%);
+  transition: opacity 2s linear;
+  z-index: 2;
+
+  @media (min-device-width: 840px) {
+    top: 28px;
+    left: 40px;
+    width: 90px;
+    height: 90px;
+  }
+}

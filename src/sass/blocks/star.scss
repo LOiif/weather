@@ -1,0 +1,54 @@
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 86vh;
+  transition: opacity 3s linear;
+}
+
+.star {
+  $total-star: 120;
+
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: url('/src/img/star.svg') center no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px rgb(255 255 255 / 27%);
+
+  @media (min-device-width: 840px) {
+    width: 9px;
+    height: 9px;
+  }
+
+  @for $i from 1 through $total-star {
+    $random-x-star: random(100000) * 0.001vw;
+    $random-y-star: random(100000) * 0.001%;
+    $random-yoyo-time-star: random-range(30000, 80000) / 100000;
+    $random-scale-star: random-range(20, 30) * 0.01;
+    $random-start-scale-star: random-range(70, 100) * 0.01;
+    $fall-duration-star: random-range(3, 5) * 1s;
+    $fall-delay-star: random(200) * -0.01s;
+
+    &:nth-child(#{$i}) {
+      right: calc(#{$random-x-star} - 10px);
+      top: $random-y-star;
+      transform: scale($random-start-scale-star);
+      animation: star $fall-duration-star $fall-delay-star linear infinite;
+    }
+    @keyframes star {
+      0% {
+        transform: scale($random-start-scale-star);
+      }
+
+      50% {
+        transform: scale($random-scale-star);
+      }
+
+      100% {
+        transform: scale($random-start-scale-star);
+      }
+    }
+  }
+}

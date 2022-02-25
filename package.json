@@ -7,9 +7,9 @@
     "start:prod": "webpack serve --mode production",
     "watch": "webpack --mode development --watch",
     "lint": "eslint --ext .ts src",
-    "lint:src": "eslint --ext .ts src --fix",
-    "stylelint": "\"**/*.scss\"",
-    "stylelint:fix": "\"**/*.scss\" --fix",
+    "lint:fix": "eslint --ext .ts src --fix",
+    "stylelint": "stylelint \"**/*.scss\"",
+    "stylelint:fix": "stylelint \"**/*.scss\" --fix",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
